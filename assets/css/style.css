@@ -1,3 +1,27 @@
+ /* Add rules over the default one over all the elements*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+}
+
+header {
     background-color: brown;
+}
+
+main {
+    background-color: aqua;
+        /* Make main element take up any surplus space to push foother down */
+        flex: 1 0 auto;
+}
+
+footer {
+    background-color: blueviolet;
 }
