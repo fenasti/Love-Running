@@ -88,8 +88,43 @@ main {
     background-color: aqua;
         /* Make main element take up any surplus space to push foother down */
         flex: 1 0 auto;
+        margin-top: 47px;
 }
 
 footer {
     background-color: blueviolet;
+}
+
+/* Media query for tablets and larger (768px up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        margin-top: 76px;
+    }
 }
