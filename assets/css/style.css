@@ -20,6 +20,10 @@
     list-style-type: none;
 }
 
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 h1 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
@@ -48,6 +52,10 @@ header a {
     text-decoration: none;
     color: inherit;
 
+}
+
+#menu > li {
+    margin-bottom: 1em;
 }
 
 main {
