@@ -31,6 +31,31 @@
         <section id="signup">
             <form action="https://formdump.codeinstitute.net" method="post" id="signup-form">
                 <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!</h2>
+                <div>
+                    <label for="first-name" class="text-input">First Name</label>
+                    <input id="first-name" type="text" name="first-name" required><br>
+                    <label for="last-name" class="text-input">Last Name</label>
+                    <input id="last-name" type="text" name="last-name" required><br>
+                    <label for="email-adress" class="text-input">Email Address</label>
+                    <input id="email-adress" type="email" name="email-adress" required><br>
+                 </div>
+                 <div id="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input id="road" name="running-preference" value="road" type="radio" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input id="trail" name="running-preference" value="trail" type="radio" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input id="both" name="running-preference" value="both" type="radio" required>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" class="join-button" value="Let's Run!">
+                </div>
             </form>
         </section>
     </main>
