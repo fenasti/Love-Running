@@ -92,8 +92,10 @@ main {
         /* Make main element take up any surplus space to push foother down */
         flex: 1 0 auto;
         margin-top: 47px;
+        /* Enable flex properties for child elements */
+        display: flex;
+        flex-direction: column;
 }
-
 /* Hero section */
 
 #hero {
@@ -157,6 +159,41 @@ hr {
 
 #benefits p {
     padding: 0 20px;
+}
+
+/*signup css*/
+
+#signup {
+    background: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10%;
+}
+
+#signup-form {
+    color:#ffffff;
+    background-color: rgba(60,60,60,0.6);
+    padding: 30px;
+}
+
+#signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa; 
+    /*width and height of the text-box*/
+    width: 100%;
+    height: 25px;
+    /* aplies for the margin outside the text-box*/
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;   
+    /*padding inside the text-box*/
+    padding: 0 5px;
 }
 
 /*Meetups*/
